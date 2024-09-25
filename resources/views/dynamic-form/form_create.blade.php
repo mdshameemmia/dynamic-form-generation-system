@@ -44,7 +44,7 @@
                     <div class="form-group">
                         <label for="" class="my-0">{{ $dynamic_form->dynamic_field ?? '' }}</label>
                         <div class="form-group d-flex">
-                            @foreach ($dynamic_form->options as $option)
+                            @foreach ($dropdownOptions as $option)
                                 <input type="checkbox"
                                     name="{{ Illuminate\Support\Str::slug($dynamic_form->dynamic_field, '_') }}[]"
                                     value="{{ $option }}">
